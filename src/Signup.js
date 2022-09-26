@@ -1,7 +1,13 @@
 import {AiFillEye} from "react-icons/ai";
 import "./style/signup.css";
-import Logo from "./logo.png"
+import Logo from "./logo.png";
+import { useState } from "react";
 export default function Signup() {
+    const[firstname,setfirstname] =useState("");
+    const[lastname,setlasttname] =useState("");
+    const[mail,setmail] =useState("");
+    const[password,setpassword] =useState("");
+    const[repassword,setrepassword] =useState("");
     return (
     <>
         <div className="Signup_outer">
@@ -18,23 +24,28 @@ export default function Signup() {
                 </div>
                 <div className="Signup_outer_inner_row4">
                     <div className="Signup_outer_inner_row4_left">
-                        <input type={"text"} placeholder="First name"/>
+                        <input type={"text"} onChange={(e) => [setfirstname(e.target.value)]} placeholder="First name"/>
+                        <label>{firstname}</label>
                     </div>
                     <div className="Signup_outer_inner_row4_right">
-                        <input type={"text"} placeholder="Last name"/>
+                        <input type={"text"} onChange={(e) => [setlasttname(e.target.value)]} placeholder="Last name"/>
+                        <label>{lastname}</label>
                     </div>
                 </div>
                 <div className="Signup_outer_inner_row5">
-                    <input type={"text"} placeholder="Email"/>
+                    <input type={"text"} onChange={(e) => [setmail(e.target.value)]} placeholder="Email"/>
+                    <label>{mail}</label>
                 </div>
                 <div className="Signup_outer_inner_row6">
-                    <input type={"Password"} placeholder="Password"/>
+                    <input type={"Password"} onChange={(e) => [setpassword(e.target.value)]} placeholder="Password"/>
+                    <label>{password}</label>
                     <div className="passwordeye">
                         <AiFillEye/>
                     </div>
                 </div>
                 <div className="Signup_outer_inner_row7">
-                    <input type={"text"} placeholder="Re-Enter password"/>
+                    <input type={"text"} onChange={(e) => [setrepassword(e.target.value)]} placeholder="Re-Enter password"/>
+                    <label>{repassword}</label>
                     <div className="passwordeye">
                         <AiFillEye/>
                     </div>
