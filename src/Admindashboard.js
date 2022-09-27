@@ -53,6 +53,12 @@ export default function Admindashboard() {
                 <label>User list</label>
                 <BsThreeDotsVertical/>
             </div>
+
+            {
+                Array.map((itm, indx)=>{
+                    return  <Singlerowlist/>
+                })
+            }
             <Singlerowlist/>
             <Singlerowlist/>
             <Singlerowlist/>
