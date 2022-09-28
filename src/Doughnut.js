@@ -49,9 +49,10 @@ export default function App() {
         style={{
           backgroundColor: "rgba(255, 255, 255, 1)",
           position: "absolute",
-          width: "150px",
-          height: "150px",
+          width: "50px",
+          height: "50px",
           borderRadius: "130px",
+          marginTop:"60px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -61,7 +62,7 @@ export default function App() {
         Test
       </div>
       <Doughnut
-        options={{ plugins: { legend: { display: false } } }}
+        options={{ plugins: { legend: { display: true } } }}
         data={data}
       ></Doughnut>
     </div>
