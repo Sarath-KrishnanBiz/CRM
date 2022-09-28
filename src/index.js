@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import Navigation from './Navigation';
-import Test from './components/Horizontalbar';
+import Test from './Admindashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

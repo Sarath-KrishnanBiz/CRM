@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0;
 }
-.toporder{
-    background-color:#e4e5e8;
+
+.toporder {
+    background-color: #e4e5e8;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -11,14 +12,16 @@ body{
     padding-right: 5%;
     padding-bottom: 10px;
 }
-.toporder_col1{
+
+.toporder_col1 {
     color: #4D5E80;
     display: flex;
     align-items: center;
     flex-direction: row;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.toporder_col1_circle{
+
+.toporder_col1_circle {
     background-color: rgb(255, 255, 255);
     width: 40px;
     height: 40px;
@@ -28,47 +31,56 @@ body{
     justify-content: center;
     margin-right: 10px;
 }
-.toporder_col1_circle_icon{
+
+.toporder_col1_circle_icon {
     color: #7b7777;
 }
-.toporder_col2{
+
+.toporder_col2 {
     display: flex;
     align-items: center;
 }
-.toporder_col2 ul{
+
+.toporder_col2 ul {
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
-.toporder_col2 li{
+
+.toporder_col2 li {
     padding-right: 20px;
 }
-.toporder_col3{
-    background-color:white;
+
+.toporder_col3 {
+    background-color: white;
     display: flex;
     align-items: center;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
-.toporder_col3 input{
+
+.toporder_col3 input {
     border: none;
     outline: none;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.toporder_col4{
+
+.toporder_col4 {
     display: flex;
     align-items: center;
 }
-.contentpart{
-    background-color:white;
+
+.contentpart {
+    background-color: white;
     display: flex;
     flex-direction: row;
 }
-.contentpart_leftbar{
+
+.contentpart_leftbar {
     background-color: #e4e5e8;
     min-height: 100vh;
     width: 10%;
@@ -78,7 +90,8 @@ body{
     min-width: 60px;
     max-width: 80px;
 }
-.contentpart_leftbar_circle{
+
+.contentpart_leftbar_circle {
     background-color: rgb(255, 255, 255);
     width: 40px;
     height: 40px;
@@ -89,23 +102,29 @@ body{
     margin-right: 10px;
     margin-top: 10px;
 }
-.contentpart_list{
+
+.contentpart_list {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: right;
-    margin-left: 76%;
+    margin-left: 8%;
+    width: 20%;
     background-color: rgb(246, 233, 240);
 }
-.contentpart_list_label{
+
+.contentpart_list_label {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-.contentpart_list_label_icon{
+
+.contentpart_list_label_icon {
     display: flex;
     flex-direction: row-reverse;
 
 }
-.contentpart_list_singlerow{
+
+.contentpart_list_singlerow {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -113,8 +132,9 @@ body{
     padding: 10px;
     border-bottom: 1px solid white;
 }
-.contentpart_list_singlerow_circle{
-    background-color:white;
+
+.contentpart_list_singlerow_circle {
+    background-color: white;
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -123,22 +143,192 @@ body{
     justify-content: center;
     margin-right: 10px;
 }
-.contentpart_list_singlerow_circle :hover{
+
+.contentpart_list_singlerow_circle :hover {
     background-color: black;
     color: white;
 }
-.contentpart_list_singlerow label{
+
+.contentpart_list_singlerow label {
     margin-left: 10px;
     margin-right: 10px;
 }
-.contentpart_list_singlerow button{
+
+.contentpart_list_singlerow button {
     background-color: white;
     color: #4D5E80;
     border: 1px solid #4D5E80;
     padding: 10px 20px;
     border-radius: 20px;
 }
-.contentpart_list_singlerow button:hover{
+
+.contentpart_list_singlerow button:hover {
     background-color: black;
     color: white;
+}
+
+.Horizontalbar_main {
+    background-color: #e3e4ea;
+    padding: 45px;
+    border-radius: 20px;
+    width: 50vh;
+    min-width: 50vh;
+    height: 50vh;
+    max-width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 20px;
+    /* align-items: center; */
+}
+
+.Horizontalbar_main_row1 {
+    display: flex;
+    flex-direction: row;
+    /* justify-content:center; */
+}
+
+.Horizontalbar_main_row2 {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 30px; */
+    padding-top: 30px;
+    font-size: x-large;
+    color: gray;
+    /* justify-content: center; */
+}
+
+.Horizontalbar_main_row2_right {
+    margin-left: 25px;
+    font-size: medium;
+    margin-top: 7px;
+}
+
+.Horizontalbar_main_row1_icon {
+    margin-left: 70%;
+    color: gray;
+}
+
+.Horizontalbar_main_row2_right span {
+    color: rgb(15, 154, 15);
+}
+
+.Horizontalbar_graph ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center;
+    /* padding-top: 5px; */
+    /* padding-bottom: 10px; */
+}
+
+.Horizontalbar_graph li {
+    background-color: #e3e4ea;
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.Horizontalbar_graph label {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    /* padding-left: 20px; */
+    justify-content: center;
+}
+
+.Horizontalbar_graph_orange {
+    background-color: #FE7E08;
+    height: 5px;
+    width: 50%;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.Horizontalbar_graph_green {
+    background-color: #29CC39;
+    height: 5px;
+    width: 30%;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+.Horizontalbar_graph_blue {
+    background-color: #052DFF;
+    height: 5px;
+    width: 15%;
+    margin-left: 35px;
+    border-radius: 20px;
+}
+
+.bargraph {
+    display: flex;
+    flex-direction: column;
+    background-color: #eceef2;
+    padding: 40px;
+    /* padding-right: 40px; */
+    margin-top: 20px;
+    margin-left: 100px;
+    width :50vh;
+    min-width: 40vh;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.bargraph .icon {
+    padding-left: 20px;
+}
+
+.bargraph ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.bargraph li {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: .7rem;
+}
+
+.bargraph .blue .title {
+    font-size: 1rem;
+    color: blue;
+}
+
+.bargraph .green .title {
+    font-size: 1rem;
+    color: green;
+}
+
+.bargraph .red .title {
+    font-size: 1rem;
+    color: red;
+}
+
+.bargraph .blue div {
+    width: 20px;
+    height: 80%;
+    background-color: blue;
+}
+
+.bargraph .green div {
+    width: 20px;
+    height: 70%;
+    background-color: green;
+}
+
+.bargraph .red div {
+    width: 20px;
+    height: 100%;
+    background-color: red;
 }
