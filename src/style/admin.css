@@ -163,7 +163,7 @@ body {
 }
 
 .contentpart_list_singlerow button:hover {
-    background-color: black;
+    background-color: rgb(255, 0, 0);
     color: white;
 }
 
